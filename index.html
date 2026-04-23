@@ -566,6 +566,7 @@
           /* TAB CONTENT */
           .tab-content{
               display:none;
+              text-align:left;
           }
           
           .tab-content.active{
@@ -627,6 +628,27 @@
           .event-row p{
               font-size:12px;
           }
+
+         .day-divider{
+                font-family: 'Great Vibes', cursive;
+                font-size: 34px;
+                color: #8b5e3c;
+                text-align: center;
+                margin: 40px 0 20px;
+                position: relative;
+            }
+            
+            /* optional elegant lines */
+            .day-divider::before,
+            .day-divider::after{
+                content: "";
+                display: inline-block;
+                width: 40px;
+                height: 1px;
+                background: rgba(139,94,60,0.4);
+                margin: 0 10px;
+                vertical-align: middle;
+            }
           
           /* MOBILE */
           @media (max-width:600px){
@@ -744,6 +766,8 @@
             <!-- SCHEDULE -->
                 <div id="schedule" class="tab-content active">
 
+                    <div class="day-divider">Day 1</div>
+                    
               <!-- Vratham -->
               <div class="event-row">
                 <div class="event-image">
@@ -783,6 +807,8 @@
                   </p>
                 </div>
               </div>
+
+                    <div class="day-divider">Day 2</div>
             
               <!-- Kashi Yatra -->
               <div class="event-row reverse">
